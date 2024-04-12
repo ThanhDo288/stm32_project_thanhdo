@@ -1,0 +1,305 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.38.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: do thanh, a, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.38.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.19
+Assembler:       Armasm.exe V6.19
+Linker/Locator:  ArmLink.exe V6.19
+Library Manager: ArmAr.exe V6.19
+Hex Converter:   FromElf.exe V6.19
+CPU DLL:         SARMCM3.DLL V5.38.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.1.0.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+C:\STM32\DAC\sys.uvprojx
+Project File Date:  10/31/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.19', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'Target 1'
+Key.c(1): warning: ISO C requires a translation unit to contain at least one declaration [-Wempty-translation-unit]
+1 warning generated.
+compiling Key.c...
+DAC.c(1): warning: In file included from...
+C:/Users/ADMIN/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+                                               ^
+C:/Users/ADMIN/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *                code will be based on direct access to peripheral<92>s registers 
+                                                                    ^
+C:/Users/ADMIN/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *           - Macros to access peripheral<92>s registers hardware
+                                           ^
+DAC.c(2): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+void DAC_Init(){
+             ^
+              void
+DAC.c(4): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        GPIOA->CRL&=~0x0FFFFFFF;
+                  ~~^~~~~~~~~~~
+DAC.c(2): warning: no previous prototype for function 'DAC_Init' [-Wmissing-prototypes]
+void DAC_Init(){
+     ^
+DAC.c(2): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void DAC_Init(){
+^
+static 
+DAC.c(9): warning: no newline at end of file [-Wnewline-eof]
+}
+ ^
+DAC.c(7): warning: no previous prototype for function 'DAC_Out' [-Wmissing-prototypes]
+void DAC_Out(uint32_t data){
+     ^
+DAC.c(7): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void DAC_Out(uint32_t data){
+^
+static 
+8 warnings generated.
+compiling DAC.c...
+RTE/Device/STM32F103C8/system_stm32f10x.c(64): warning: In file included from...
+C:/Users/ADMIN/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+                                               ^
+C:/Users/ADMIN/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *                code will be based on direct access to peripheral<92>s registers 
+                                                                    ^
+C:/Users/ADMIN/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *           - Macros to access peripheral<92>s registers hardware
+                                           ^
+RTE/Device/STM32F103C8/system_stm32f10x.c(166): warning: no previous extern declaration for non-static variable 'AHBPrescTable' [-Wmissing-variable-declarations]
+__I uint8_t AHBPrescTable[16] = {0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 4, 6, 7, 8, 9};
+            ^
+RTE/Device/STM32F103C8/system_stm32f10x.c(166): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+__I uint8_t AHBPrescTable[16] = {0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 4, 6, 7, 8, 9};
+    ^
+4 warnings generated.
+compiling system_stm32f10x.c...
+sys.c(1): warning: In file included from...
+C:/Users/ADMIN/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+                                               ^
+C:/Users/ADMIN/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *                code will be based on direct access to peripheral<92>s registers 
+                                                                    ^
+C:/Users/ADMIN/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *           - Macros to access peripheral<92>s registers hardware
+                                           ^
+sys.c(2): warning: In file included from...
+./DAC.h(2): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+void DAC_Init();
+             ^
+              void
+sys.c(3): warning: In file included from...
+./Sound.h(2): warning: // comments are not allowed in this language [-Wcomment]
+  // extra credit 1)
+  ^
+./Sound.h(1): warning: no previous prototype for function 'Song_Init' [-Wmissing-prototypes]
+void Song_Init(void){
+     ^
+./Sound.h(1): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void Song_Init(void){
+^
+static 
+./Sound.h(7): warning: no previous prototype for function 'Song_Play' [-Wmissing-prototypes]
+void Song_Play(void){
+     ^
+./Sound.h(7): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void Song_Play(void){
+^
+static 
+./Sound.h(13): warning: no previous prototype for function 'Song_Stop' [-Wmissing-prototypes]
+void Song_Stop(void){
+     ^
+./Sound.h(13): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void Song_Stop(void){
+^
+static 
+sys.c(9): warning: implicit declaration of function 'Sound_Start' [-Wimplicit-function-declaration]
+                        Sound_Start(period);
+                        ^
+sys.c(8): warning: no previous prototype for function 'change_period' [-Wmissing-prototypes]
+void change_period(uint32_t period){
+     ^
+sys.c(8): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void change_period(uint32_t period){
+^
+static 
+sys.c(11): warning: no previous extern declaration for non-static variable 'Key_1' [-Wmissing-variable-declarations]
+        uint8_t Key_1=0;
+                ^
+sys.c(11): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+        uint8_t Key_1=0;
+        ^
+sys.c(13): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+void sys_init(){
+             ^
+              void
+sys.c(13): warning: no previous prototype for function 'sys_init' [-Wmissing-prototypes]
+void sys_init(){
+     ^
+sys.c(13): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void sys_init(){
+^
+static 
+sys.c(21): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+void GPIO_Test(){
+              ^
+               void
+sys.c(26): warning: // comments are not allowed in this language [-Wcomment]
+//void TIM2_IRQHandler(void){
+^
+sys.c(21): warning: no previous prototype for function 'GPIO_Test' [-Wmissing-prototypes]
+void GPIO_Test(){
+     ^
+sys.c(21): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void GPIO_Test(){
+^
+static 
+sys.c(33): warning: no previous prototype for function 'Delay_ms' [-Wmissing-prototypes]
+void Delay_ms(uint32_t delay){
+     ^
+sys.c(33): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void Delay_ms(uint32_t delay){
+^
+static 
+sys.c(58): warning: no newline at end of file [-Wnewline-eof]
+}
+ ^
+sys.c(12): warning: no previous extern declaration for non-static variable 'Key_2' [-Wmissing-variable-declarations]
+        uint8_t Key_2;
+                ^
+sys.c(12): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+        uint8_t Key_2;
+        ^
+19 warnings generated.
+compiling sys.c...
+Sound.c(1): warning: In file included from...
+C:/Users/ADMIN/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+                                               ^
+C:/Users/ADMIN/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *                code will be based on direct access to peripheral<92>s registers 
+                                                                    ^
+C:/Users/ADMIN/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *           - Macros to access peripheral<92>s registers hardware
+                                           ^
+Sound.c(2): warning: In file included from...
+./DAC.h(2): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+void DAC_Init();
+             ^
+              void
+Sound.c(3): warning: no previous extern declaration for non-static variable 'sinwave' [-Wmissing-variable-declarations]
+const uint8_t sinwave[32] ={0,1,2,5,9,14,20,26,32,38,44,50,54,59,61,63,63,63,61,59,54,50,44,38,32,26,20,14,9,5,2,1};
+              ^
+Sound.c(3): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+const uint8_t sinwave[32] ={0,1,2,5,9,14,20,26,32,38,44,50,54,59,61,63,63,63,61,59,54,50,44,38,32,26,20,14,9,5,2,1};
+      ^
+Sound.c(4): warning: excess elements in array initializer [-Wexcess-initializers]
+        const uint8_t sinwave1[32] ={1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1};
+                                                                                                     ^
+Sound.c(4): warning: no previous extern declaration for non-static variable 'sinwave1' [-Wmissing-variable-declarations]
+        const uint8_t sinwave1[32] ={1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1};
+                      ^
+Sound.c(4): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+        const uint8_t sinwave1[32] ={1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1};
+              ^
+Sound.c(5): warning: no previous extern declaration for non-static variable 'index' [-Wmissing-variable-declarations]
+        uint16_t index=0;
+                 ^
+Sound.c(5): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+        uint16_t index=0;
+        ^
+Sound.c(6): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+void Sound_Init(){
+               ^
+                void
+Sound.c(6): warning: no previous prototype for function 'Sound_Init' [-Wmissing-prototypes]
+void Sound_Init(){
+     ^
+Sound.c(6): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void Sound_Init(){
+^
+static 
+Sound.c(16): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+        TIM2->ARR=period-1;
+                 ~~~~~~~^~
+Sound.c(13): warning: no previous prototype for function 'Sound_Start' [-Wmissing-prototypes]
+void Sound_Start(int period){
+     ^
+Sound.c(13): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void Sound_Start(int period){
+^
+static 
+Sound.c(22): warning: // comments are not allowed in this language [-Wcomment]
+  // optional
+  ^
+Sound.c(23): warning: implicit declaration of function 'DAC_Out' [-Wimplicit-function-declaration]
+        DAC_Out(voice[index]);
+        ^
+Sound.c(20): warning: no previous prototype for function 'Sound_Voice' [-Wmissing-prototypes]
+void Sound_Voice(const uint8_t *voice){
+     ^
+Sound.c(20): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void Sound_Voice(const uint8_t *voice){
+^
+static 
+Sound.c(33): warning: no newline at end of file [-Wnewline-eof]
+        }
+         ^
+Sound.c(27): warning: no previous prototype for function 'TIM2_IRQHandler' [-Wmissing-prototypes]
+void TIM2_IRQHandler(void){
+     ^
+Sound.c(27): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void TIM2_IRQHandler(void){
+^
+static 
+17 warnings generated.
+compiling Sound.c...
+linking...
+Program Size: Code=1170 RO-data=286 RW-data=0 ZI-data=1640  
+FromELF: creating hex file...
+".\Objects\sys.axf" - 0 Error(s), 49 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM.CMSIS.5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F1xx_DFP.2.4.1.pack
+                Keil.STM32F1xx_DFP.2.4.1
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+   * Component: Startup Version: 1.0.0
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/Device/STM32F103C8
+  ./RTE/_Target_1
+  C:/Users/ADMIN/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  C:/Users/ADMIN/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.6.0
+
+   * Component: Keil::Device:Startup:1.0.0
+      Source file:   Device/Source/ARM/startup_stm32f10x_md.s
+      Source file:   Device/Source/ARM/STM32F1xx_OPT.s
+      Include file:  RTE_Driver/Config/RTE_Device.h
+      Source file:   Device/Source/system_stm32f10x.c
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>
